@@ -34,7 +34,7 @@ function Splash() {
       <input />
     </Form.Field>
     <Form.Field>
-      <label>Last Name</label>
+      <label>Password</label>
       <input  type='password' />
     </Form.Field>
     <div style={{textAlign: "center"}}><Button onClick={() =>     history.push("/Resources")} color="green" style={{ borderRadius: 0 }}>Login</Button> <Button onClick={() =>     history.push("/Resources")} color="black" style={{ borderRadius: 0 }}>Sign up</Button></div>
