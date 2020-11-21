@@ -19,10 +19,10 @@ function Splash() {
                         {!form ?
                             <div className="splashButtons">
                                 <div>
-                                    <Button onClick={() => setForm(true)} color="green" style={{ borderRadius: 0 }}>Jobseekers</Button>
+                                    <Button size='huge' onClick={() => setForm(true)} color="green" style={{ borderRadius: 0 }}>Jobseekers</Button>
                                 </div>
                                 <div>
-                                    <Button onClick={() => setForm(true)} color="black" style={{ borderRadius: 0 }}>Employers</Button>
+                                    <Button size='huge' onClick={() => setForm(true)} color="black" style={{ borderRadius: 0 }}>Employers</Button>
                                 </div>
                             </div>
                             : <>
