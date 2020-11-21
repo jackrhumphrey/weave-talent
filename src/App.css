@@ -1,38 +1,212 @@
-.App {
+body {
+  background:#eee;
+  color: #000;
+  opacity: 0.87;
+}
+.header{
+  padding:50px;
+  background:#00c853;
+  color:#fff;
+  font:80px Arial;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* @font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("src/CaslonPro/ACaslonPro-Semibold.eot");
+  src: local("Adobe Caslon Pro Semibold"), local("ACaslonPro-Semibold"),
+    url("src/CaslonPro/ACaslonPro-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("src/CaslonPro/ACaslonPro-Semibold.woff") format("woff"),
+    url("src/CaslonPro/ACaslonPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("src/CaslonPro/ACaslonPro-SemiboldItalic.eot");
+  src: local("Adobe Caslon Pro Semibold Italic"),
+    local("ACaslonPro-SemiboldItalic"),
+    url("src/CaslonPro/ACaslonPro-SemiboldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("src/CaslonPro/ACaslonPro-SemiboldItalic.woff") format("woff"),
+    url("src/CaslonPro/ACaslonPro-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("src/CaslonPro/ACaslonPro-Bold.eot");
+  src: local("Adobe Caslon Pro Bold"), local("ACaslonPro-Bold"),
+    url("src/CaslonPro/ACaslonPro-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("src/CaslonPro/ACaslonPro-Bold.woff") format("woff"),
+    url("src/CaslonPro/ACaslonPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("src/CaslonPro/ACaslonPro-Regular.eot");
+  src: local("Adobe Caslon Pro Regular"), local("ACaslonPro-Regular"),
+    url("src/CaslonPro/ACaslonPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("src/CaslonPro/ACaslonPro-Regular.woff") format("woff"),
+    url("src/CaslonPro/ACaslonPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("src/CaslonPro/ACaslonPro-Italic.eot");
+  src: local("Adobe Caslon Pro Italic"), local("ACaslonPro-Italic"),
+    url("src/CaslonPro/ACaslonPro-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("src/CaslonPro/ACaslonPro-Italic.woff") format("woff"),
+    url("src/CaslonPro/ACaslonPro-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("src/CaslonPro/ACaslonPro-BoldItalic.eot");
+  src: local("Adobe Caslon Pro Bold Italic"), local("ACaslonPro-BoldItalic"),
+    url("src/CaslonPro/ACaslonPro-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("src/CaslonPro/ACaslonPro-BoldItalic.woff") format("woff"),
+    url("src/CaslonPro/ACaslonPro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+} */
+
+html {
+  font-family: Adobe Caslon Pro, Times, Times New Roman, serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+#root,
+.container {
+  height: 100vh;
+  height: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  height: stretch;
+}
+
+.splash {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  height: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  height: stretch;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  background: -webkit-linear-gradient(60deg, #fcc, #cff, #cfc) fixed;
+  background: linear-gradient(60deg, #fcc, #cff, #cfc) fixed;
 }
 
-.App-link {
-  color: #61dafb;
+.splashInner{
+align-self:center;
+margin:auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.splashLower{
+  height: 186px;}
+
+.splashButtons{
+  height: 186px;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.splashText {
+  margin:30px!important;
+  cursor: default;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: normal;
+  color: #00c853;
+  background: #00c853;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes one {
+  0% {
+    background-position: 0% 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    background-position: 100% 0%;
   }
+
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes one {
+  0% {
+    background-position: 0% 100%;
+  }
+
+  50% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.main {
+  margin: 50px;
+  height: 100vh;
+  height: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  height: stretch;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}
+
+.content {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about {
+  background: #f90;
+  color: #fff;
+  padding: 25px;
+  font-size: 1.4em;
+  line-height: 1em;
+}
+
+.ui.form .field > label, .link a {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
 }

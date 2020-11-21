@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+
+import 'semantic-ui-css/semantic.min.css';
+
+import "./App.css";
+
+import Splash from "./Splash";
+import Resources from "./Resources";
+import Profile from "./Profile";
+
+import { Input, Button } from "semantic-ui-react";
+
+import { BrowserRouter, Route, NavLink } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <BrowserRouter>
+        <Route exact path="/" component={Splash} />
+        <Route path="/Resources" component={Resources} />
+        <Route path="/Profile" component={Profile} />
+      </BrowserRouter>
+    </>
+  )
 }
 
 export default App;
