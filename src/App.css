@@ -12,6 +12,16 @@ body {
   text-align: center;
 }
 
+a{
+  color:#000;
+}
+
+.subheader{
+  color: #00c853;
+  font:1.4em Arial;
+font-weight:bold;
+}
+
 /* @font-face {
   font-family: "Adobe Caslon Pro";
   src: url("src/CaslonPro/ACaslonPro-Semibold.eot");
@@ -192,14 +202,7 @@ margin:auto;
   margin: auto;
   width: 100%;
   max-width: 1200px;
-}
-
-.about {
-  background: #f90;
-  color: #fff;
-  padding: 25px;
-  font-size: 1.4em;
-  line-height: 1em;
+  margin-top:50px;
 }
 
 .ui.form .field > label, .link a {
