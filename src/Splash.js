@@ -41,10 +41,13 @@ function Splash() {
 </Form>
                             </>}
                     </div>
+                    <div className="tagline">Building communities through inclusive hiring</div>
+
                 </div>
             </div>
             <div className="main">
                 <div className="content">
+                    
                 </div>
             </div>
         </div>

@@ -9,9 +9,11 @@ function Resources() {
         <>
             <Header />
 
-
-
             <div className="content">
+
+            <div className="subheader" style={{fontSize:"2em"}}>Resources</div>
+
+            <br></br>
 
             <div className="subheader">Voluntary work</div>
 

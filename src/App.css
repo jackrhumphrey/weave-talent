@@ -7,8 +7,8 @@ body {
   padding:50px;
   background:#00c853;
   color:#fff;
-  font:80px Arial;
-  font-weight:bold;
+  font:80px futura;
+  font-weight:normal;
   text-align: center;
 }
 
@@ -18,23 +18,16 @@ a{
 
 .subheader{
   color: #00c853;
-  font:1.4em Arial;
-font-weight:bold;
+  font:1.4em futura;
 }
 
-/* @font-face {
-  font-family: "Adobe Caslon Pro";
-  src: url("src/CaslonPro/ACaslonPro-Semibold.eot");
-  src: local("Adobe Caslon Pro Semibold"), local("ACaslonPro-Semibold"),
-    url("src/CaslonPro/ACaslonPro-Semibold.eot?#iefix")
-      format("embedded-opentype"),
-    url("src/CaslonPro/ACaslonPro-Semibold.woff") format("woff"),
-    url("src/CaslonPro/ACaslonPro-Semibold.ttf") format("truetype");
+ @font-face {
+  font-family: "Futura";
+  src: url("../src/FuturaLT-Bold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
-
-@font-face {
+/* @font-face {
   font-family: "Adobe Caslon Pro";
   src: url("src/CaslonPro/ACaslonPro-SemiboldItalic.eot");
   src: local("Adobe Caslon Pro Semibold Italic"),
@@ -146,43 +139,14 @@ margin:auto;
   margin:30px!important;
   cursor: default;
   margin: 0 auto;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 100px;
-  font-weight: bold;
   line-height: normal;
   color: #00c853;
   background: #00c853;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-@-webkit-keyframes one {
-  0% {
-    background-position: 0% 100%;
-  }
-
-  50% {
-    background-position: 100% 0%;
-  }
-
-  100% {
-    background-position: 0% 100%;
-  }
-}
-
-@keyframes one {
-  0% {
-    background-position: 0% 100%;
-  }
-
-  50% {
-    background-position: 100% 0%;
-  }
-
-  100% {
-    background-position: 0% 100%;
-  }
 }
 
 .main {
@@ -197,11 +161,16 @@ margin:auto;
   align-content: center;
   display: flex;
 }
-
+.tagline{  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  color: #00c853;
+font: 1.4em futura;
+}
 .content {
   margin: auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 575px;
   margin-top:50px;
 }
 
